@@ -6,6 +6,7 @@
 
 | Что посмотреть | Где |
 | --- | --- |
+| Сквозной пример с входными данными и двумя стратегиями | [Демонстрационный проект](demo/megafon/) |
 | Стратегия для руководителя, варианты и условия пилота | [Итоговая стратегия](docs/megafon-submission-strategy.md) |
 | Что подтверждает работу агента и как это проверить | [Маршрут для жюри](docs/jury-guide.md) |
 | Описание работы со скриншотами | [PDF](docs/MGIMO_MegaFon_Project_Description.pdf) · [DOCX](docs/MGIMO_MegaFon_Project_Description.docx) |
