@@ -1,0 +1,8 @@
+{
+  "packet_id": "megafon-training-recheck-02",
+  "kind": "synthetic_training_update",
+  "eligible_families_per_week": 546,
+  "planned_recruitment_weeks": 6,
+  "basis": "Для контрольного сценария аналитик подтвердил плановый темп уникальных впервые подходящих семей на ограниченном совместимом тарифе; темп указан суммарно на обе группы.",
+  "effect_observed": false
+}

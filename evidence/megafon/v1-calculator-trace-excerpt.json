@@ -1,0 +1,10 @@
+{
+  "kind": "curated_excerpt_not_raw_log",
+  "successful_event_type": "item.completed",
+  "event_exit_code": 0,
+  "invocation_normalized": [
+    "python",
+    "tools/operator_model.py",
+    "demo/megafon/assumptions.json"
+  ]
+}

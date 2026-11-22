@@ -1,0 +1,21 @@
+[
+  {
+    "arm": "agent",
+    "case": "megafon",
+    "exit_status": 0,
+    "elapsed_seconds": 303.52,
+    "model_arg": null,
+    "usage_reported": [
+      {
+        "input_tokens": 428939,
+        "cached_input_tokens": 398336,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10406,
+        "reasoning_output_tokens": 1130
+      }
+    ],
+    "answer_written": true,
+    "state_written": true,
+    "state_changed": true
+  }
+]

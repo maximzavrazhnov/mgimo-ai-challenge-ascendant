@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "scenario": "megafon",
+  "arm": "agent",
+  "model": null,
+  "attempts": {
+    "agent-megafon": [
+      {
+        "number": 1,
+        "complete": true,
+        "result": {
+          "arm": "agent",
+          "case": "megafon",
+          "exit_status": 0,
+          "elapsed_seconds": 303.52,
+          "model_arg": null,
+          "usage_reported": [
+            {
+              "input_tokens": 428939,
+              "cached_input_tokens": 398336,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 10406,
+              "reasoning_output_tokens": 1130
+            }
+          ],
+          "answer_written": true,
+          "state_written": true,
+          "state_changed": true
+        },
+        "hashes": {
+          "decision.md": "6eaeecde22663ec6a201fa85db0564b0425a1825f7e9175704fc3157698b58be",
+          "state.json": "405b6048145686dd20f8d339e9b4c0b64bfb51cf2334f0233bd41950d1f637ec"
+        }
+      }
+    ]
+  }
+}

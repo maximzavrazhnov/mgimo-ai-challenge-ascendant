@@ -1,0 +1,22 @@
+{
+  "kind": "sensitivity_on_synthetic_inputs_not_forecast",
+  "rate_rub": 500,
+  "scenarios": {
+    "no_effect": {
+      "paid_number_months": 0,
+      "direct_cost_rub": 280000,
+      "incremental_margin_rub": -280000,
+      "scenario_profit_rub": 278720000,
+      "remaining_gap_rub": 6280000,
+      "months_required_for_target": 12560
+    },
+    "sensitivity": {
+      "paid_number_months": 414,
+      "direct_cost_rub": 280000,
+      "incremental_margin_rub": -73000,
+      "scenario_profit_rub": 278927000,
+      "remaining_gap_rub": 6073000,
+      "months_required_for_target": 12560
+    }
+  }
+}

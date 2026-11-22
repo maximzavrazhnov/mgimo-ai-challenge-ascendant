@@ -1,0 +1,43 @@
+[
+  {
+    "arm": "agent",
+    "case": "a",
+    "exit_status": 0,
+    "elapsed_seconds": 191.34,
+    "model_arg": null,
+    "usage_reported": [
+      {
+        "input_tokens": 334263,
+        "cached_input_tokens": 311680,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6104,
+        "reasoning_output_tokens": 177
+      }
+    ],
+    "answer_written": true,
+    "state_written": true,
+    "state_changed": true
+  },
+  {
+    "arm": "agent",
+    "case": "update-1",
+    "exit_status": 1,
+    "elapsed_seconds": 240.38,
+    "model_arg": null,
+    "usage_reported": null,
+    "answer_written": true,
+    "state_written": true,
+    "state_changed": true
+  },
+  {
+    "arm": "agent",
+    "case": "update-2",
+    "exit_status": 1,
+    "elapsed_seconds": 9.16,
+    "model_arg": null,
+    "usage_reported": null,
+    "answer_written": false,
+    "state_written": true,
+    "state_changed": false
+  }
+]

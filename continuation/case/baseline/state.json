@@ -1,0 +1,365 @@
+{
+  "schema_version": 1,
+  "decision_version": 1,
+  "phase": "operator_annual_strategy_initial_package",
+  "status": "analysis_saved_pending_human_decision",
+  "saved_at_utc": "2026-11-21T17:14:29.919892+00:00",
+  "source_versions": [
+    {
+      "path": "megafon-workflow.md",
+      "sha256": "514f5274aa6b714898d1173645a60784fda6a223b127bb7177488cce593e410b",
+      "version_type": "content_sha256",
+      "access": "local_only"
+    },
+    {
+      "path": "workflow.md",
+      "sha256": "a2bf6eb0728aa9f0d8cdaf41b9259ef569e90c4ced9dfbb21fd0db88db094285",
+      "version_type": "content_sha256",
+      "access": "local_only"
+    },
+    {
+      "path": "demo/megafon/brief.md",
+      "sha256": "2574eb42fd579c60cd0484ba10f834d5547b37d5f2f4cc4f1fbf42ac87f9af97",
+      "version_type": "content_sha256",
+      "access": "local_only"
+    },
+    {
+      "path": "demo/megafon/assumptions.json",
+      "sha256": "3a4944a76ccaf31c7408756b6f04974bc0e061c40b9fbcc35ebff306c5963ee4",
+      "version_type": "content_sha256",
+      "access": "local_only"
+    },
+    {
+      "path": "demo/megafon/public-source.md",
+      "sha256": "07eae87725e4a5074ec19f1b12cb214d2ad19b1c0acb01f2d6abd3fc01ab98aa",
+      "version_type": "content_sha256",
+      "access": "local_only"
+    },
+    {
+      "path": "tools/operator_model.py",
+      "sha256": "22308b97a7de8f8d3eba1736d8837dab5b439bfde75412056aab8e5816d1c8ae",
+      "version_type": "content_sha256",
+      "access": "local_only"
+    },
+    {
+      "path": "templates/state.json",
+      "sha256": "d0dc1f651417b55e265d11df5138f90d58e524b0e876f55dc5a4f30bb060f837",
+      "version_type": "content_sha256",
+      "access": "local_only"
+    },
+    {
+      "path": "templates/decision.md",
+      "sha256": "cdfe0a3d7fec7580adb0c148362655ea6d8165ed6e44a42b21fd7f744fad96f1",
+      "version_type": "content_sha256",
+      "access": "local_only"
+    }
+  ],
+  "scope": {
+    "synthetic_data_only": true,
+    "network_used": false,
+    "public_pdf_opened": false,
+    "public_source_access": "saved_excerpt_only",
+    "reference_used": false,
+    "alternative_update_used": false,
+    "inputs_modified": false,
+    "external_accounts_accessed": false
+  },
+  "facts": [
+    {
+      "claim": "Все показатели учебные; внутренних данных нет.",
+      "source": "demo/megafon/brief.md: введение и заключительный абзац"
+    },
+    {
+      "claim": "Выделение интернета и переключение собственных номеров уже существуют.",
+      "source": "demo/megafon/brief.md: Задача, п. 1"
+    },
+    {
+      "claim": "Обязательны разрешения участника, подтверждение плательщика и подтверждение операции.",
+      "source": "demo/megafon/brief.md: Задача, п. 2"
+    },
+    {
+      "claim": "Активный запас и активация за 14 дней различаются.",
+      "source": "demo/megafon/brief.md: Задача, п. 3"
+    },
+    {
+      "claim": "Доступны 100000 семей и 40000 владельцев; пересечение отнесено к семьям.",
+      "source": "demo/megafon/brief.md: Задача, п. 3"
+    },
+    {
+      "claim": "Руководитель определён; дизайн и аналитика не выделены; разработка предварительна; QA не подтверждён.",
+      "source": "demo/megafon/brief.md: Задача, п. 7"
+    }
+  ],
+  "hypotheses": [
+    {
+      "claim": "Снижение ограничений 12% до 9% за 7 дней.",
+      "status": "untested_planning_assumption",
+      "source": "demo/megafon/assumptions.json: pilot_assumptions; определение события в runs/decision.md, часть 3"
+    },
+    {
+      "claim": "Сценарные конверсии, сохранность, активность и оплаченные месяцы.",
+      "status": "illustrative_not_observed",
+      "source": "demo/megafon/assumptions.json: scenarios"
+    },
+    {
+      "claim": "Единая панель дороже предупреждения; сметы нет.",
+      "status": "qualitative_assumption_no_estimate",
+      "source": "runs/decision.md: часть 4"
+    }
+  ],
+  "reviewed_actions": [
+    {
+      "action": "Выделение интернета",
+      "status": "внедрено",
+      "decision": "Не считать новой мерой.",
+      "source": "demo/megafon/brief.md: п. 1"
+    },
+    {
+      "action": "Переключение собственных номеров",
+      "status": "внедрено",
+      "decision": "Не считать новой мерой.",
+      "source": "demo/megafon/brief.md: п. 1"
+    },
+    {
+      "action": "Предупреждение в приложении",
+      "status": "неизвестно",
+      "basis": "История тестов отсутствует.",
+      "decision": "Ограниченный пилот; новизна не установлена."
+    },
+    {
+      "action": "Единая панель и автоматизация",
+      "status": "неизвестно",
+      "basis": "История тестов отсутствует.",
+      "decision": "Отложить до доказательств."
+    },
+    {
+      "action": "Обычное обслуживание",
+      "status": "рассмотрено",
+      "decision": "Контроль и резервный путь."
+    },
+    {
+      "action": "Пауза пилота",
+      "status": "условно",
+      "decision": "При отсутствии QA, данных или разрешений; обычное обслуживание сохранить."
+    }
+  ],
+  "calculations": {
+    "command": "python tools/operator_model.py demo/megafon/assumptions.json",
+    "exit_code": 0,
+    "result_file": "runs/model-result.json",
+    "kind": "illustrative_assumptions_not_observed",
+    "scenario_results": {
+      "main": {
+        "prediction": {
+          "profit_rub": 280770000,
+          "active_families": 5980,
+          "connected_families": 9200,
+          "multi_number_owners": 1000,
+          "activation_14d": 0.56
+        },
+        "gap_to_target": {
+          "profit_rub": 4230000,
+          "active_families": 2020,
+          "connected_families": 2800,
+          "multi_number_owners": 1000,
+          "activation_14d": 0.04
+        },
+        "increment_vs_without_change": {
+          "profit_rub": 1770000,
+          "active_families": 980,
+          "connected_families": 1200,
+          "multi_number_owners": 0,
+          "activation_14d": 0.11
+        },
+        "unique_family_reach": 23000,
+        "incremental_creations_by_channel": {
+          "app": 1200.0,
+          "support": 300.0
+        },
+        "incremental_accepted_invitations": 1050.0,
+        "incremental_new_connected_at_year_end": 945,
+        "additional_existing_families_retained": 255,
+        "family_coverage": 0.092,
+        "owner_coverage": 0.025,
+        "incremental_paid_number_months": 4500,
+        "new_direct_cost_rub": 480000,
+        "net_increment_by_quarter_rub": [
+          0,
+          240000,
+          610000,
+          920000
+        ],
+        "max_total_development_repayable_this_year_rub": 1770000,
+        "paid_number_months_to_reach_profit_target": 12960,
+        "missing_paid_number_months_for_target": 8460,
+        "payback_quarter_after_last_positive_investment": null
+      },
+      "adverse": {
+        "prediction": {
+          "profit_rub": 279520000,
+          "active_families": 5281,
+          "connected_families": 8450,
+          "multi_number_owners": 1000,
+          "activation_14d": 0.48
+        },
+        "gap_to_target": {
+          "profit_rub": 5480000,
+          "active_families": 2719,
+          "connected_families": 3550,
+          "multi_number_owners": 1000,
+          "activation_14d": 0.12
+        },
+        "increment_vs_without_change": {
+          "profit_rub": 520000,
+          "active_families": 281,
+          "connected_families": 450,
+          "multi_number_owners": 0,
+          "activation_14d": 0.03
+        },
+        "unique_family_reach": 23000,
+        "incremental_creations_by_channel": {
+          "app": 600.0,
+          "support": 120.0
+        },
+        "incremental_accepted_invitations": 432.0,
+        "incremental_new_connected_at_year_end": 367,
+        "additional_existing_families_retained": 83,
+        "family_coverage": 0.0845,
+        "owner_coverage": 0.025,
+        "incremental_paid_number_months": 1800,
+        "new_direct_cost_rub": 380000,
+        "net_increment_by_quarter_rub": [
+          0,
+          15000,
+          180000,
+          325000
+        ],
+        "max_total_development_repayable_this_year_rub": 520000,
+        "paid_number_months_to_reach_profit_target": 12760,
+        "missing_paid_number_months_for_target": 10960,
+        "payback_quarter_after_last_positive_investment": null
+      }
+    },
+    "pilot": {
+      "families_per_arm": 1638,
+      "total_families": 3276,
+      "required_unique_families_per_week": 546,
+      "observation_days_after_last_inclusion": 7
+    },
+    "supplementary_formulas": {
+      "reach_for_12000": "ceil((12000-8000-retained_existing)/(acceptance*retention*(incremental_creations/23000)))",
+      "main_reach": 91149,
+      "adverse_reach": 245346,
+      "active_connections_required_main": 12308,
+      "active_connections_required_adverse": 12800,
+      "development_payback": "500*incremental_paid_number_months-direct_cost >= total_development_investment"
+    }
+  },
+  "conclusions": [
+    {
+      "claim": "Подготовить пилот; расширение пока не обосновано.",
+      "basis": [
+        "Нет измеренного эффекта.",
+        "Оба сценария ниже всех пяти целей.",
+        "Ресурсы не подтверждены полностью."
+      ],
+      "status": "recommendation_pending_approval"
+    },
+    {
+      "claim": "Годовой предел возврата разработки 1770000/520000 рублей; срок неизвестен.",
+      "basis": [
+        "runs/model-result.json: max_total_development_repayable_this_year_rub",
+        "investment_by_quarter_rub=null"
+      ]
+    },
+    {
+      "claim": "Охват не закрывает все цели; adverse требует больше всей доступной базы.",
+      "basis": [
+        "Формулы в decision.md, часть 3.",
+        "Раздельные цели активных, активаций, владельцев и прибыли."
+      ]
+    },
+    {
+      "claim": "Апрельский старт оплаченных месяцев требует проверки при разработке Q2.",
+      "basis": [
+        "assumptions.json: monthly series",
+        "brief.md: п. 7"
+      ]
+    }
+  ],
+  "pilot_plan": {
+    "assignment_unit": "whole_family",
+    "eligible_numbers_per_family": 1,
+    "arms": [
+      "usual_service",
+      "app_warning"
+    ],
+    "analysis": "intention_to_treat",
+    "primary_metric": "share_of_assigned_families_with_confirmed_exhaustion_restriction_on_selected_number_within_7_days",
+    "proposed_effect_threshold_pp": 3,
+    "alpha": 0.05,
+    "power_assumption": 0.8,
+    "activation_followup_days": 14,
+    "proposed_economic_followup_days": 90,
+    "guardrails": {
+      "immediate_stop": [
+        "unauthorized_disclosure",
+        "duplicate_operation"
+      ],
+      "proposed_failed_operations_max_increase_pp": 1,
+      "proposed_support_contacts_per_assigned_family_max_relative_increase": 0.1,
+      "wide_intervals": "safety_not_confirmed"
+    },
+    "under_recruitment": "extend_only_with_preapproved_time_and_budget_or_report_inconclusive"
+  },
+  "quarterly_decisions": {
+    "Q1": "approve preparation resource, protocol, budget and data/QA gates",
+    "Q2": "expand only after useful measured effect, acceptable intervals/guardrails and conservative positive economics; otherwise modify, observe or stop",
+    "Q3": "conditional compatible-family expansion with control",
+    "Q4": "separate December stock, yearly profit and mature Q4 activation",
+    "year3": "proposed minimum original targets, not forecast; human approval and independent economics required"
+  },
+  "open_questions": [
+    "Точность кода причины и наличие свободного общего объёма.",
+    "Скорость набора и базовая частота.",
+    "Полная стоимость и график разработки.",
+    "Дедупликация каналов.",
+    "Причинный мост к оплаченным номеро-месяцам.",
+    "Созревание 90-дневной экономики до Q2.",
+    "Бюджет и проверка сегмента владельцев собственных номеров.",
+    "Недоступная история прежних тестов."
+  ],
+  "human_decision": {
+    "status": "awaiting",
+    "owner": "руководитель продукта",
+    "selected_option": null,
+    "required_choices": [
+      "Вариант",
+      "Бюджет",
+      "QA и остальные роли",
+      "Горизонт окупаемости",
+      "Принятие недобора годовых целей",
+      "Ориентир третьего года"
+    ],
+    "authorization_scope": "Подготовка файлов; запуск пилота не поручен."
+  },
+  "outputs": [
+    "runs/decision.md",
+    "runs/decision.v1.md",
+    "runs/model-result.json",
+    "runs/state.json"
+  ],
+  "next_action": "Получить выбор руководителя по предложению в decision.md, затем утвердить роли, смету, данные и протокол. При новом материале читать только названный пакет и затронутые основания.",
+  "revision": {
+    "previous_decision": null,
+    "new_package": null,
+    "affected_conclusions": [],
+    "preservation": "initial decision snapshot runs/decision.v1.md; preserve current outputs before later revision"
+  },
+  "time_and_cost": {
+    "measured_work_duration": null,
+    "actual_cost_rub": null,
+    "reason": "Учёт фактических трудозатрат и ставок отсутствует; время сохранения не равно длительности работы.",
+    "resource_facts_source": "demo/megafon/brief.md: п. 7"
+  }
+}

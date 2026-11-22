@@ -1,0 +1,86 @@
+[
+  {
+    "query": "fewer-fields",
+    "status": "matched",
+    "matches": [
+      {
+        "id": "short-form",
+        "aliases": "shorter-form|fewer-fields",
+        "action": "Сократить форму с пяти полей до трёх",
+        "stage": "form",
+        "scope": "both_devices",
+        "status": "live",
+        "evidence": "H1: синтетический журнал релизов и demo/brief.md",
+        "result": "Два поля уже удалены; измеренного эффекта в кейсе нет",
+        "line": 2
+      }
+    ],
+    "limits": "Exact IDs and declared aliases only; assess semantic matches and differences separately."
+  },
+  {
+    "query": "calculator",
+    "status": "matched",
+    "matches": [
+      {
+        "id": "price-calculator",
+        "aliases": "calculator|price-widget",
+        "action": "Добавить калькулятор цены",
+        "stage": "landing",
+        "scope": "both_devices",
+        "status": "live",
+        "evidence": "H2: синтетический журнал релизов и demo/landing.html",
+        "result": "Калькулятор уже доступен; использования в таблице нет",
+        "line": 3
+      }
+    ],
+    "limits": "Exact IDs and declared aliases only; assess semantic matches and differences separately."
+  },
+  {
+    "query": "broad-targeting",
+    "status": "matched",
+    "matches": [
+      {
+        "id": "audience-broadening",
+        "aliases": "broad-targeting",
+        "action": "Расширить таргетинг на компании без выраженного интереса",
+        "stage": "ads",
+        "scope": "general_smb",
+        "status": "tested",
+        "evidence": "H3: синтетическая заметка об эксперименте",
+        "result": "Пробовали ранее; сопоставимых итогов в папке нет",
+        "line": 4
+      }
+    ],
+    "limits": "Exact IDs and declared aliases only; assess semantic matches and differences separately."
+  },
+  {
+    "query": "instant-hook",
+    "status": "matched",
+    "matches": [
+      {
+        "id": "instant-activation",
+        "aliases": "instant-hook",
+        "action": "Обещать мгновенное подключение",
+        "stage": "offer",
+        "scope": "all",
+        "status": "rejected",
+        "evidence": "H4: синтетическая заметка продуктовой команды",
+        "result": "Реальное время подключения не подтверждено",
+        "line": 5
+      }
+    ],
+    "limits": "Exact IDs and declared aliases only; assess semantic matches and differences separately."
+  },
+  {
+    "query": "server-acceptance-audit",
+    "status": "not_found_in_available_history",
+    "matches": [],
+    "limits": "Exact IDs and declared aliases only; assess semantic matches and differences separately."
+  },
+  {
+    "query": "remove-another-field",
+    "status": "not_found_in_available_history",
+    "matches": [],
+    "limits": "Exact IDs and declared aliases only; assess semantic matches and differences separately."
+  }
+]

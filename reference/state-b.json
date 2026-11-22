@@ -1,0 +1,40 @@
+{
+  "phase": "B",
+  "status": "awaiting_human_choice",
+  "previous": "reference/state-a.json",
+  "source_versions": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+  ],
+  "facts": [
+    {
+      "id": "F2",
+      "text": "Источник S7 показывает разные определения под меткой lead.",
+      "basis": "demo/update/measurement-note.md"
+    },
+    {
+      "id": "F3",
+      "text": "Сопоставимые принятые заявки 30 и 30; CR 4,6154% в каждом периоде.",
+      "basis": "reference/metrics-b.json"
+    }
+  ],
+  "reviewed_actions": [
+    "short-form",
+    "price-calculator",
+    "audience-broadening",
+    "instant-activation"
+  ],
+  "outputs": [
+    "reference/metrics-b.json",
+    "reference/phase-b.md"
+  ],
+  "human_decision": null,
+  "next_action": "Согласовать единую метрику отчёта и следующий сопоставимый период наблюдения.",
+  "time_and_cost": null
+}
+

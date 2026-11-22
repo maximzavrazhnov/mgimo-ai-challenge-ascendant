@@ -1,0 +1,6 @@
+id,aliases,action,stage,scope,status,evidence,result
+short-form,shorter-form|fewer-fields,Сократить форму с пяти полей до трёх,form,both_devices,live,H1: синтетический журнал релизов и demo/brief.md,Два поля уже удалены; измеренного эффекта в кейсе нет
+price-calculator,calculator|price-widget,Добавить калькулятор цены,landing,both_devices,live,H2: синтетический журнал релизов и demo/landing.html,Калькулятор уже доступен; использования в таблице нет
+audience-broadening,broad-targeting,Расширить таргетинг на компании без выраженного интереса,ads,general_smb,tested,H3: синтетическая заметка об эксперименте,Пробовали ранее; сопоставимых итогов в папке нет
+instant-activation,instant-hook,Обещать мгновенное подключение,offer,all,rejected,H4: синтетическая заметка продуктовой команды,Реальное время подключения не подтверждено
+

@@ -1,0 +1,18 @@
+{
+  "source": "demo/update/measurement-note.md",
+  "goals": {
+    "before": "form_submit_attempt",
+    "after": "server_accepted_application"
+  },
+  "accepted_by_period": {
+    "before": {
+      "desktop": 14,
+      "mobile": 16
+    },
+    "after": {
+      "desktop": 14,
+      "mobile": 16
+    }
+  }
+}
+

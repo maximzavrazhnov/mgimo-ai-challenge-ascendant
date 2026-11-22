@@ -1,0 +1,42 @@
+{
+  "status": "analysis_complete_no_external_changes",
+  "language": "ru",
+  "sources": ["demo/traffic-review/brief.md", "demo/traffic-review/traffic.csv"],
+  "decision_file": "runs/decision.md",
+  "scope": "Only current workspace files; no network; inputs unchanged",
+  "validated": {"rows": 40, "unique_segment_week_rows": 40, "weeks_before": 4, "weeks_after": 4, "date_start": "2026-09-21", "date_end_inclusive": "2026-11-15"},
+  "recommendation": {
+    "reject": "Blanket mobile shutdown and automatic desktop budget transfer",
+    "pause_candidate": "mobile/ios/partner/offer",
+    "execution_gate": "Confirm conversion maturity, attribution completeness and spend before pause; otherwise stop expansion and cap diagnostic spend",
+    "preserve": ["mobile/android/search/main", "mobile/ios/search/main"],
+    "budget": "Hold released budget; test incremental search capacity with a fixed spend/loss cap before scaling",
+    "external_actions_executed": false
+  },
+  "metrics": {
+    "cpa_limit_rub": 1000,
+    "mobile_before": {"visits": 2000, "accepted": 170, "spend_rub": 95000, "cr": 0.085, "cpa_rub": 558.823529},
+    "mobile_after": {"visits": 2000, "accepted": 120, "spend_rub": 95000, "cr": 0.06, "cpa_rub": 791.666667},
+    "weak_before": {"visits": 500, "accepted": 30, "spend_rub": 25000, "cr": 0.06, "cpa_rub": 833.333333, "mobile_visit_share": 0.25},
+    "weak_after": {"visits": 1000, "accepted": 20, "spend_rub": 45000, "cr": 0.02, "cpa_rub": 2250, "mobile_visit_share": 0.5},
+    "mobile_search_after": {"visits": 1000, "accepted": 100, "spend_rub": 50000, "cpa_rub": 500},
+    "desktop_each_period": {"visits": 1100, "accepted": 90, "spend_rub": 51000, "cpa_rub": 566.666667},
+    "decomposition": {"method": "Old rates for composition effect, new weights for within-segment effect", "composition_pp": -0.825, "within_pp": -1.675, "after_cr_at_old_weights": 0.08},
+    "weak_cr_wilson_95_upper": 0.03069024,
+    "weak_breakeven_cr_at_current_visit_cost": 0.045
+  },
+  "limitations": ["Fictional case", "No daily evidence for yesterday", "Only search and partner shown", "OS, channel and landing confounded", "Desktop not randomized control", "No profit or lead quality data", "Confidence interval assumes independent visits and mature conversions"],
+  "unavailable_sources": ["Conversion delay distribution and server logs", "Daily traffic and spend", "Partner placement breakdown", "CRM revenue and lead quality", "Release, promotion and external demand calendar", "Seasonality control", "Alternative landing experiment within the same segment", "Incremental search capacity and marginal CPA"],
+  "next_steps": [
+    {"owner": "analytics", "action": "Validate maturity, tracking and spend; review within one business day"},
+    {"owner": "product", "action": "Inspect offer form, speed and server acceptance on iOS"},
+    {"owner": "media_buyer", "action": "After validation, apply narrow reversible pause; preserve mobile search; avoid automatic desktop transfer"},
+    {"owner": "analytics_and_product", "action": "Design randomized landing comparison within segment, with useful effect, sample size, conversion window and loss cap specified before launch"}
+  ],
+  "reconsider_when": {
+    "narrow_pause": "Mature conversions change CPA; profitable lead quality; bad partner placements localized",
+    "resume_scaling": "Mature comparable test supports CPA <= 1000 RUB with uncertainty and lead quality assessed",
+    "broad_mobile_pause": "Validated threshold violations in other material mobile segments or a common technical failure",
+    "budget_transfer": "Incremental test supports extra accepted leads at marginal CPA <= 1000 RUB"
+  }
+}

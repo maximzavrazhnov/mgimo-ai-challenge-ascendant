@@ -1,0 +1,78 @@
+{
+  "kind": "calendar_sensitivity_synthetic_not_forecast",
+  "direct_cost_assumption": "same annual direct costs as v1; deployment dates are unknown",
+  "results_by_delay_months": {
+    "0": {
+      "main": {
+        "in_year_added_paid_number_months": 4500,
+        "added_paid_number_months_outside_year": 0,
+        "assumed_in_year_direct_cost_rub": 480000,
+        "in_year_gross_profit_increment_rub": 1770000,
+        "in_year_gross_profit_rub": 280770000,
+        "maximum_development_repayable_in_year_rub": 1770000
+      },
+      "adverse": {
+        "in_year_added_paid_number_months": 1800,
+        "added_paid_number_months_outside_year": 0,
+        "assumed_in_year_direct_cost_rub": 380000,
+        "in_year_gross_profit_increment_rub": 520000,
+        "in_year_gross_profit_rub": 279520000,
+        "maximum_development_repayable_in_year_rub": 520000
+      }
+    },
+    "1": {
+      "main": {
+        "in_year_added_paid_number_months": 3600,
+        "added_paid_number_months_outside_year": 900,
+        "assumed_in_year_direct_cost_rub": 480000,
+        "in_year_gross_profit_increment_rub": 1320000,
+        "in_year_gross_profit_rub": 280320000,
+        "maximum_development_repayable_in_year_rub": 1320000
+      },
+      "adverse": {
+        "in_year_added_paid_number_months": 1400,
+        "added_paid_number_months_outside_year": 400,
+        "assumed_in_year_direct_cost_rub": 380000,
+        "in_year_gross_profit_increment_rub": 320000,
+        "in_year_gross_profit_rub": 279320000,
+        "maximum_development_repayable_in_year_rub": 320000
+      }
+    },
+    "3": {
+      "main": {
+        "in_year_added_paid_number_months": 2100,
+        "added_paid_number_months_outside_year": 2400,
+        "assumed_in_year_direct_cost_rub": 480000,
+        "in_year_gross_profit_increment_rub": 570000,
+        "in_year_gross_profit_rub": 279570000,
+        "maximum_development_repayable_in_year_rub": 570000
+      },
+      "adverse": {
+        "in_year_added_paid_number_months": 750,
+        "added_paid_number_months_outside_year": 1050,
+        "assumed_in_year_direct_cost_rub": 380000,
+        "in_year_gross_profit_increment_rub": -5000,
+        "in_year_gross_profit_rub": 278995000,
+        "maximum_development_repayable_in_year_rub": 0
+      }
+    },
+    "6": {
+      "main": {
+        "in_year_added_paid_number_months": 600,
+        "added_paid_number_months_outside_year": 3900,
+        "assumed_in_year_direct_cost_rub": 480000,
+        "in_year_gross_profit_increment_rub": -180000,
+        "in_year_gross_profit_rub": 278820000,
+        "maximum_development_repayable_in_year_rub": 0
+      },
+      "adverse": {
+        "in_year_added_paid_number_months": 150,
+        "added_paid_number_months_outside_year": 1650,
+        "assumed_in_year_direct_cost_rub": 380000,
+        "in_year_gross_profit_increment_rub": -305000,
+        "in_year_gross_profit_rub": 278695000,
+        "maximum_development_repayable_in_year_rub": 0
+      }
+    }
+  }
+}

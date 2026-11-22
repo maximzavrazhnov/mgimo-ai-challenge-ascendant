@@ -1,0 +1,41 @@
+{
+  "phase": "A",
+  "status": "awaiting_human_choice",
+  "source_versions": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "text": "50 и 30 визитов с отчётной целью",
+      "basis": "S2:2–5"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "text": "Возможна несопоставимость определения цели",
+      "basis": "S2: совпадает только метка цели",
+      "status": "unverified"
+    }
+  ],
+  "reviewed_actions": [
+    "short-form",
+    "price-calculator",
+    "audience-broadening",
+    "instant-activation"
+  ],
+  "outputs": [
+    "reference/metrics-a.json",
+    "reference/phase-a.md"
+  ],
+  "human_decision": null,
+  "next_action": "Получить определение цели и сопоставимые серверные заявки за оба периода; после проверки пересмотреть выводы.",
+  "time_and_cost": null
+}
+

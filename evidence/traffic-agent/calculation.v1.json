@@ -1,0 +1,482 @@
+{
+  "weeks_per_period": {
+    "before": 4,
+    "after": 4
+  },
+  "same_window_length": true,
+  "devices": {
+    "desktop": {
+      "before": {
+        "visits": 1100,
+        "accepted_visits": 90,
+        "spend_rub": "51000",
+        "cr_pct": 8.1818,
+        "cpa_rub": 566.6667
+      },
+      "after": {
+        "visits": 1100,
+        "accepted_visits": 90,
+        "spend_rub": "51000",
+        "cr_pct": 8.1818,
+        "cpa_rub": 566.6667
+      }
+    },
+    "mobile": {
+      "before": {
+        "visits": 2000,
+        "accepted_visits": 170,
+        "spend_rub": "95000",
+        "cr_pct": 8.5,
+        "cpa_rub": 558.8235
+      },
+      "after": {
+        "visits": 2000,
+        "accepted_visits": 120,
+        "spend_rub": "95000",
+        "cr_pct": 6.0,
+        "cpa_rub": 791.6667
+      }
+    }
+  },
+  "segments": [
+    {
+      "device": "desktop",
+      "os": "desktop",
+      "channel": "partner",
+      "landing": "offer",
+      "before": {
+        "totals": {
+          "visits": 300,
+          "accepted_visits": 18,
+          "spend_rub": "15000",
+          "cr_pct": 6.0,
+          "cpa_rub": 833.3333
+        },
+        "weeks": {
+          "2026-09-21": {
+            "visits": 75,
+            "accepted_visits": 4,
+            "spend_rub": "3750",
+            "cr_pct": 5.3333,
+            "cpa_rub": 937.5
+          },
+          "2026-09-28": {
+            "visits": 75,
+            "accepted_visits": 5,
+            "spend_rub": "3750",
+            "cr_pct": 6.6667,
+            "cpa_rub": 750.0
+          },
+          "2026-10-05": {
+            "visits": 75,
+            "accepted_visits": 4,
+            "spend_rub": "3750",
+            "cr_pct": 5.3333,
+            "cpa_rub": 937.5
+          },
+          "2026-10-12": {
+            "visits": 75,
+            "accepted_visits": 5,
+            "spend_rub": "3750",
+            "cr_pct": 6.6667,
+            "cpa_rub": 750.0
+          }
+        }
+      },
+      "after": {
+        "totals": {
+          "visits": 300,
+          "accepted_visits": 18,
+          "spend_rub": "15000",
+          "cr_pct": 6.0,
+          "cpa_rub": 833.3333
+        },
+        "weeks": {
+          "2026-10-19": {
+            "visits": 75,
+            "accepted_visits": 4,
+            "spend_rub": "3750",
+            "cr_pct": 5.3333,
+            "cpa_rub": 937.5
+          },
+          "2026-10-26": {
+            "visits": 75,
+            "accepted_visits": 5,
+            "spend_rub": "3750",
+            "cr_pct": 6.6667,
+            "cpa_rub": 750.0
+          },
+          "2026-11-02": {
+            "visits": 75,
+            "accepted_visits": 4,
+            "spend_rub": "3750",
+            "cr_pct": 5.3333,
+            "cpa_rub": 937.5
+          },
+          "2026-11-09": {
+            "visits": 75,
+            "accepted_visits": 5,
+            "spend_rub": "3750",
+            "cr_pct": 6.6667,
+            "cpa_rub": 750.0
+          }
+        }
+      }
+    },
+    {
+      "device": "desktop",
+      "os": "desktop",
+      "channel": "search",
+      "landing": "main",
+      "before": {
+        "totals": {
+          "visits": 800,
+          "accepted_visits": 72,
+          "spend_rub": "36000",
+          "cr_pct": 9.0,
+          "cpa_rub": 500.0
+        },
+        "weeks": {
+          "2026-09-21": {
+            "visits": 200,
+            "accepted_visits": 18,
+            "spend_rub": "9000",
+            "cr_pct": 9.0,
+            "cpa_rub": 500.0
+          },
+          "2026-09-28": {
+            "visits": 200,
+            "accepted_visits": 18,
+            "spend_rub": "9000",
+            "cr_pct": 9.0,
+            "cpa_rub": 500.0
+          },
+          "2026-10-05": {
+            "visits": 200,
+            "accepted_visits": 18,
+            "spend_rub": "9000",
+            "cr_pct": 9.0,
+            "cpa_rub": 500.0
+          },
+          "2026-10-12": {
+            "visits": 200,
+            "accepted_visits": 18,
+            "spend_rub": "9000",
+            "cr_pct": 9.0,
+            "cpa_rub": 500.0
+          }
+        }
+      },
+      "after": {
+        "totals": {
+          "visits": 800,
+          "accepted_visits": 72,
+          "spend_rub": "36000",
+          "cr_pct": 9.0,
+          "cpa_rub": 500.0
+        },
+        "weeks": {
+          "2026-10-19": {
+            "visits": 200,
+            "accepted_visits": 18,
+            "spend_rub": "9000",
+            "cr_pct": 9.0,
+            "cpa_rub": 500.0
+          },
+          "2026-10-26": {
+            "visits": 200,
+            "accepted_visits": 18,
+            "spend_rub": "9000",
+            "cr_pct": 9.0,
+            "cpa_rub": 500.0
+          },
+          "2026-11-02": {
+            "visits": 200,
+            "accepted_visits": 18,
+            "spend_rub": "9000",
+            "cr_pct": 9.0,
+            "cpa_rub": 500.0
+          },
+          "2026-11-09": {
+            "visits": 200,
+            "accepted_visits": 18,
+            "spend_rub": "9000",
+            "cr_pct": 9.0,
+            "cpa_rub": 500.0
+          }
+        }
+      }
+    },
+    {
+      "device": "mobile",
+      "os": "android",
+      "channel": "search",
+      "landing": "main",
+      "before": {
+        "totals": {
+          "visits": 1000,
+          "accepted_visits": 90,
+          "spend_rub": "45000",
+          "cr_pct": 9.0,
+          "cpa_rub": 500.0
+        },
+        "weeks": {
+          "2026-09-21": {
+            "visits": 230,
+            "accepted_visits": 20,
+            "spend_rub": "10350",
+            "cr_pct": 8.6957,
+            "cpa_rub": 517.5
+          },
+          "2026-09-28": {
+            "visits": 250,
+            "accepted_visits": 22,
+            "spend_rub": "11250",
+            "cr_pct": 8.8,
+            "cpa_rub": 511.3636
+          },
+          "2026-10-05": {
+            "visits": 260,
+            "accepted_visits": 24,
+            "spend_rub": "11700",
+            "cr_pct": 9.2308,
+            "cpa_rub": 487.5
+          },
+          "2026-10-12": {
+            "visits": 260,
+            "accepted_visits": 24,
+            "spend_rub": "11700",
+            "cr_pct": 9.2308,
+            "cpa_rub": 487.5
+          }
+        }
+      },
+      "after": {
+        "totals": {
+          "visits": 650,
+          "accepted_visits": 65,
+          "spend_rub": "32500",
+          "cr_pct": 10.0,
+          "cpa_rub": 500.0
+        },
+        "weeks": {
+          "2026-10-19": {
+            "visits": 150,
+            "accepted_visits": 15,
+            "spend_rub": "7500",
+            "cr_pct": 10.0,
+            "cpa_rub": 500.0
+          },
+          "2026-10-26": {
+            "visits": 160,
+            "accepted_visits": 16,
+            "spend_rub": "8000",
+            "cr_pct": 10.0,
+            "cpa_rub": 500.0
+          },
+          "2026-11-02": {
+            "visits": 170,
+            "accepted_visits": 17,
+            "spend_rub": "8500",
+            "cr_pct": 10.0,
+            "cpa_rub": 500.0
+          },
+          "2026-11-09": {
+            "visits": 170,
+            "accepted_visits": 17,
+            "spend_rub": "8500",
+            "cr_pct": 10.0,
+            "cpa_rub": 500.0
+          }
+        }
+      }
+    },
+    {
+      "device": "mobile",
+      "os": "ios",
+      "channel": "partner",
+      "landing": "offer",
+      "before": {
+        "totals": {
+          "visits": 500,
+          "accepted_visits": 30,
+          "spend_rub": "25000",
+          "cr_pct": 6.0,
+          "cpa_rub": 833.3333
+        },
+        "weeks": {
+          "2026-09-21": {
+            "visits": 125,
+            "accepted_visits": 7,
+            "spend_rub": "6250",
+            "cr_pct": 5.6,
+            "cpa_rub": 892.8571
+          },
+          "2026-09-28": {
+            "visits": 125,
+            "accepted_visits": 8,
+            "spend_rub": "6250",
+            "cr_pct": 6.4,
+            "cpa_rub": 781.25
+          },
+          "2026-10-05": {
+            "visits": 125,
+            "accepted_visits": 7,
+            "spend_rub": "6250",
+            "cr_pct": 5.6,
+            "cpa_rub": 892.8571
+          },
+          "2026-10-12": {
+            "visits": 125,
+            "accepted_visits": 8,
+            "spend_rub": "6250",
+            "cr_pct": 6.4,
+            "cpa_rub": 781.25
+          }
+        }
+      },
+      "after": {
+        "totals": {
+          "visits": 1000,
+          "accepted_visits": 20,
+          "spend_rub": "45000",
+          "cr_pct": 2.0,
+          "cpa_rub": 2250.0
+        },
+        "weeks": {
+          "2026-10-19": {
+            "visits": 230,
+            "accepted_visits": 5,
+            "spend_rub": "10350",
+            "cr_pct": 2.1739,
+            "cpa_rub": 2070.0
+          },
+          "2026-10-26": {
+            "visits": 250,
+            "accepted_visits": 4,
+            "spend_rub": "11250",
+            "cr_pct": 1.6,
+            "cpa_rub": 2812.5
+          },
+          "2026-11-02": {
+            "visits": 260,
+            "accepted_visits": 6,
+            "spend_rub": "11700",
+            "cr_pct": 2.3077,
+            "cpa_rub": 1950.0
+          },
+          "2026-11-09": {
+            "visits": 260,
+            "accepted_visits": 5,
+            "spend_rub": "11700",
+            "cr_pct": 1.9231,
+            "cpa_rub": 2340.0
+          }
+        }
+      }
+    },
+    {
+      "device": "mobile",
+      "os": "ios",
+      "channel": "search",
+      "landing": "main",
+      "before": {
+        "totals": {
+          "visits": 500,
+          "accepted_visits": 50,
+          "spend_rub": "25000",
+          "cr_pct": 10.0,
+          "cpa_rub": 500.0
+        },
+        "weeks": {
+          "2026-09-21": {
+            "visits": 125,
+            "accepted_visits": 12,
+            "spend_rub": "6250",
+            "cr_pct": 9.6,
+            "cpa_rub": 520.8333
+          },
+          "2026-09-28": {
+            "visits": 125,
+            "accepted_visits": 13,
+            "spend_rub": "6250",
+            "cr_pct": 10.4,
+            "cpa_rub": 480.7692
+          },
+          "2026-10-05": {
+            "visits": 125,
+            "accepted_visits": 12,
+            "spend_rub": "6250",
+            "cr_pct": 9.6,
+            "cpa_rub": 520.8333
+          },
+          "2026-10-12": {
+            "visits": 125,
+            "accepted_visits": 13,
+            "spend_rub": "6250",
+            "cr_pct": 10.4,
+            "cpa_rub": 480.7692
+          }
+        }
+      },
+      "after": {
+        "totals": {
+          "visits": 350,
+          "accepted_visits": 35,
+          "spend_rub": "17500",
+          "cr_pct": 10.0,
+          "cpa_rub": 500.0
+        },
+        "weeks": {
+          "2026-10-19": {
+            "visits": 80,
+            "accepted_visits": 8,
+            "spend_rub": "4000",
+            "cr_pct": 10.0,
+            "cpa_rub": 500.0
+          },
+          "2026-10-26": {
+            "visits": 90,
+            "accepted_visits": 9,
+            "spend_rub": "4500",
+            "cr_pct": 10.0,
+            "cpa_rub": 500.0
+          },
+          "2026-11-02": {
+            "visits": 90,
+            "accepted_visits": 9,
+            "spend_rub": "4500",
+            "cr_pct": 10.0,
+            "cpa_rub": 500.0
+          },
+          "2026-11-09": {
+            "visits": 90,
+            "accepted_visits": 9,
+            "spend_rub": "4500",
+            "cr_pct": 10.0,
+            "cpa_rub": 500.0
+          }
+        }
+      }
+    }
+  ],
+  "descriptive_decomposition": {
+    "desktop": {
+      "after_cr_at_before_mix_pct": 8.1818,
+      "within_segment_change_at_before_mix_pp": 0.0,
+      "mix_change_at_after_rates_pp": 0.0,
+      "total_change_pp": 0.0
+    },
+    "mobile": {
+      "after_cr_at_before_mix_pct": 8.0,
+      "within_segment_change_at_before_mix_pp": -0.5,
+      "mix_change_at_after_rates_pp": -2.0,
+      "total_change_pp": -2.5
+    }
+  },
+  "limits": [
+    "Descriptive standardization; not a causal or seasonality estimate.",
+    "Comparable goal, attribution, traffic definitions and coverage must be checked in the source brief.",
+    "Matched segment trends and economics inform a decision. These numbers do not authorize a pause."
+  ]
+}

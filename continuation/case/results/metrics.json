@@ -1,0 +1,13 @@
+{
+  "packet_id": "megafon-training-update-recruitment-01",
+  "kind": "synthetic_training_update",
+  "target_families": 3276,
+  "old_weekly_plan": 546,
+  "eligible_families_per_week": 150,
+  "planned_recruitment_weeks": 6,
+  "families_in_planned_window": 900,
+  "shortfall_families": 2376,
+  "recruitment_weeks_needed": 22,
+  "followup_days_after_last_family": 7,
+  "effect_observed": false
+}

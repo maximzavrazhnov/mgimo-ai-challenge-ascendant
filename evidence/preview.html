@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Стратег маркетинговых воронок · МГИМО AI Challenge</title>
+<style>
+:root{color-scheme:light;--ink:#1a2335;--muted:#4e5b70;--blue:#17456a;--line:#ccd8df;--bg:#f0f5f6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 system-ui,sans-serif}
+main{width:min(1120px,calc(100% - 48px));margin:50px auto}header{margin-bottom:24px}p{margin:8px 0 14px}.eyebrow{color:var(--blue);text-transform:uppercase;letter-spacing:.1em;font-size:12px;font-weight:750}
+h1{font-size:clamp(32px,5vw,56px);line-height:1.08;margin:10px 0 18px}h2{font-size:20px;margin:0}h3{margin:0 0 8px;font-size:19px}
+article,section{background:white;border:1px solid var(--line);border-radius:12px;padding:24px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0}
+.metric{font-size:clamp(32px,5vw,54px);font-weight:750;line-height:1.2;margin:8px 0}.tag{font-size:14px;font-weight:750;color:var(--blue)}.muted{color:var(--muted)}a{color:#154e7a;text-decoration-thickness:1px;text-underline-offset:3px}footer{margin:18px 0;color:var(--muted);font-size:14px}@media(max-width:690px){.grid{grid-template-columns:1fr}main{width:calc(100% - 32px);margin:24px auto}}
+</style></head><body><main>
+<header><div class="eyebrow">МГИМО AI Challenge · конкурсный прототип</div><h1>Стратег маркетинговых воронок</h1><p class="muted">Разбор сохранённых прогонов на синтетических данных</p></header>
+<article><h2>Исходное решение</h2><div class="metric">50 → 30</div><p>Снизилось число визитов с отчётной целью. Агент проверил историю: сокращение формы и калькулятор уже внедрены. Следующий шаг: сверить определение цели с приёмом заявок.</p><a href="stage-a/decision.md">Решение</a> · <a href="stage-a/state.json">Сохранённое состояние</a></article>
+<div class="grid">
+<article><span class="tag">Обновление 1</span><div class="metric">30 → 30</div><h3>Исправить отчёт</h3><p>По одному определению число визитов с принятыми заявками не изменилось. Сохранить форму и бюджет.</p><a href="update-1/update.md">Решение</a> · <a href="update-1/calculation-v2.json">Расчёт</a></article>
+<article><span class="tag">Обновление 2</span><div class="metric">42 → 30</div><h3>Исправить сохранение региона</h3><p>Мобильные 28 → 16, десктоп 14 → 14. В акте QA мобильная форма теряет выбранный регион. Вклад дефекта в общую просадку и эффект правки ещё предстоит измерить.</p><a href="update-2/update.md">Решение</a> · <a href="../demo/alternative-update/qa-traces.csv">Акт QA</a></article>
+</div>
+<section><h2>Отдельная проверка: сегменты трафика</h2><p>Мобильный поиск: 500 ₽ за визит с принятой заявкой. Проблемная связка iOS / partner / offer: 2 250 ₽. Оба варианта сохранили поиск и выделили слабую связку.</p><a href="../docs/traffic-comparison.md">Сравнение с базовым Codex</a> · <a href="../docs/paired-run-results.md">Результаты и ограничения</a></section>
+<footer>Оба обновления начались с копий одного исходного состояния. Рекомендации не исполнялись в рекламных кабинетах или продукте.</footer>
+</main></body></html>

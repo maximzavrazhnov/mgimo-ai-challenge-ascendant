@@ -1,0 +1,10 @@
+{
+  "url": "https://ceph.megafon.ru/htdocs-pk-ceph/ai/tariff_attrs/ac3834e1-31c5-4ccf-8258-bcfb3eb64577/846c61a0-0542-458e-b7c0-8def8dcfb08d/pdf/tariff_5229_orl_79ae0.pdf",
+  "checked_at_utc": "2026-11-22T10:24:48+00:00",
+  "status": "verified",
+  "http_status": 200,
+  "sha256": "f0eabf15f5363cdabd0b3a6b80897dca6d5a26ebbea7e5c7a44fe50bfaf575da",
+  "source_page": 2,
+  "locator": "Примечание 5, абзац об условиях семейного пакета",
+  "finding": "В опубликованной редакции после исчерпания пакета скорость снижается; для отдельных типов устройств услуга недоступна."
+}

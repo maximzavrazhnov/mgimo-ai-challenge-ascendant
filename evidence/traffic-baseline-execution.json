@@ -1,0 +1,21 @@
+[
+  {
+    "arm": "baseline",
+    "case": "traffic",
+    "exit_status": 0,
+    "elapsed_seconds": 121.58,
+    "model_arg": null,
+    "usage_reported": [
+      {
+        "input_tokens": 180178,
+        "cached_input_tokens": 150272,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4098,
+        "reasoning_output_tokens": 264
+      }
+    ],
+    "answer_written": true,
+    "state_written": true,
+    "state_changed": true
+  }
+]

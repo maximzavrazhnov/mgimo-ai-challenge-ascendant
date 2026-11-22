@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 312.38,
+  "exit_status": 0,
+  "error": null,
+  "original_input_hashes": {
+    "baseline\\decision.md": "6eaeecde22663ec6a201fa85db0564b0425a1825f7e9175704fc3157698b58be",
+    "baseline\\model-result.json": "734b8df049aaec825b11b7fc8a980fe855b56989196c396a44f03853ccf717fc",
+    "baseline\\progress.json": "e3d686e9758a96f982185380aa332be431f9ae09dee87af8b1de2471495a7571",
+    "baseline\\results.json": "debbe33a2fb568eff14ea5b20ba27e659aea34a94be4e9bc0f45522250befaaf",
+    "baseline\\state.json": "405b6048145686dd20f8d339e9b4c0b64bfb51cf2334f0233bd41950d1f637ec",
+    "demo\\megafon\\assumptions.json": "3a4944a76ccaf31c7408756b6f04974bc0e061c40b9fbcc35ebff306c5963ee4",
+    "demo\\megafon\\brief.md": "2574eb42fd579c60cd0484ba10f834d5547b37d5f2f4cc4f1fbf42ac87f9af97",
+    "demo\\megafon\\public-source.md": "07eae87725e4a5074ec19f1b12cb214d2ad19b1c0acb01f2d6abd3fc01ab98aa",
+    "update\\recruitment.json": "2ad396fd2dd272cb2c3cdfcd9e1e76135abf86bfc43e641403954929ca206901",
+    "tools\\recruitment.py": "85832849aa71263efb001d92f44c10630c608ea3683ad861a54f87decf6b61c9"
+  },
+  "input_files_unchanged": true,
+  "usage": [
+    {
+      "input_tokens": 396150,
+      "cached_input_tokens": 366336,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 12425,
+      "reasoning_output_tokens": 428
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "periods": {
+    "before": {
+      "impressions": 12000,
+      "clicks": 720,
+      "visits": 650,
+      "bounces": 164,
+      "form_start_visits": 200,
+      "reported_goal_visits": 50,
+      "spend_rub": "21600",
+      "days": 7,
+      "goal_label": "lead",
+      "source_lines": [
+        2,
+        3
+      ],
+      "ctr_pct": 6.0,
+      "cpc_rub": 30.0,
+      "bounce_pct": 25.2308,
+      "form_start_per_visit_pct": 30.7692,
+      "reported_goal_per_visit_pct": 7.6923
+    },
+    "after": {
+      "impressions": 12000,
+      "clicks": 720,
+      "visits": 650,
+      "bounces": 164,
+      "form_start_visits": 200,
+      "reported_goal_visits": 30,
+      "spend_rub": "21600",
+      "days": 7,
+      "goal_label": "lead",
+      "source_lines": [
+        4,
+        5
+      ],
+      "ctr_pct": 6.0,
+      "cpc_rub": 30.0,
+      "bounce_pct": 25.2308,
+      "form_start_per_visit_pct": 30.7692,
+      "reported_goal_per_visit_pct": 4.6154
+    }
+  },
+  "same_duration": true,
+  "goal_comparability": "unknown",
+  "accepted_application_comparison": null,
+  "accepted_application_by_device": null,
+  "warnings": [
+    "Goal label alone does not establish equivalent event definitions.",
+    "Visits and ad clicks are from different measurement systems, not necessarily a nested cohort."
+  ]
+}

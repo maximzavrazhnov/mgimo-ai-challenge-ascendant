@@ -1,0 +1,5 @@
+scenario,cost_item,volume_per_period,unit_cost_rub,periods
+no_effect,operational_support,400,100,4
+no_effect,delivery,10000,3,4
+sensitivity,operational_support,400,100,4
+sensitivity,delivery,10000,3,4

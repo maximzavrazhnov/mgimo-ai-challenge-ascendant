@@ -1,0 +1,160 @@
+{
+  "phase": "traffic-review/initial",
+  "status": "awaiting_human_decision_and_missing_evidence",
+  "source_versions": [
+    {
+      "file": "AGENTS.md",
+      "sha256": "2f9586cd48f6b9622e8ddea8555de6a229ec8bfa65283e95baa1dc11e946322f"
+    },
+    {
+      "file": "workflow.md",
+      "sha256": "a2bf6eb0728aa9f0d8cdaf41b9259ef569e90c4ced9dfbb21fd0db88db094285"
+    },
+    {
+      "file": "demo/traffic-review/brief.md",
+      "sha256": "1ac5d7dc66dde30b2e115011bfa9c2144b1cf266442c70c2dc1454058a4f3e9b"
+    },
+    {
+      "file": "demo/traffic-review/traffic.csv",
+      "sha256": "b2c3db5bb01522ea96864cc5bb9da3eda6aec6a4df1a97e56956014615dea57a"
+    },
+    {
+      "file": "tools/segments.py",
+      "sha256": "f9fc9bbd256b3092d42adc30ceef05fba93bf38780e070b82b73ce3132bcb4ba"
+    },
+    {
+      "file": "tools/funnel.py",
+      "sha256": "c0d3357f62f593c7835427895a55904efd2b9d4ef418042a0cc102b3c2e257d0"
+    },
+    {
+      "file": "templates/state.json",
+      "sha256": "d0dc1f651417b55e265d11df5138f90d58e524b0e876f55dc5a4f30bb060f837"
+    },
+    {
+      "file": "templates/decision.md",
+      "sha256": "cdfe0a3d7fec7580adb0c148362655ea6d8165ed6e44a42b21fd7f744fad96f1"
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Same server acceptance definition and attribution; four full weeks per period; two channels only; threshold 1000 RUB",
+      "source": "demo/traffic-review/brief.md:7"
+    },
+    {
+      "claim": "Mobile CR 8.5 to 6%; CPA 558.8235 to 791.6667 RUB; problem concentrated in mobile/ios/partner/offer, CR 6 to 2%, CPA 833.3333 to 2250 RUB",
+      "source": "runs/calculation.v1.json: devices.mobile; segments[3]"
+    },
+    {
+      "claim": "Mobile search CPA 500 RUB in both periods; desktop segments unchanged",
+      "source": "runs/calculation.v1.json: segments[0,1,2,4]"
+    },
+    {
+      "claim": "Fixed baseline mix after CR 8%; within change -0.5 pp, mix -2 pp; descriptive only",
+      "source": "runs/calculation.v1.json: descriptive_decomposition.mobile"
+    },
+    {
+      "claim": "Weekly problem CPA exceeds 1000 RUB all four after weeks; small accepted counts; significance not calculated",
+      "source": "runs/calculation.v1.json: segments[3].after.weeks"
+    },
+    {
+      "claim": "No current-path document or action ledger among available local inputs; implementation/test/rejection history unknown",
+      "source": "local file inventory, 2026-11-18; workflow.md:4"
+    }
+  ],
+  "hypotheses": [
+    {
+      "claim": "Partner placement quality, offer/message mismatch, or submission failure",
+      "status": "unverified",
+      "evidence": "Aggregate outcome only; no mechanism logs"
+    }
+  ],
+  "reviewed_actions": [
+    {
+      "action": "form diagnostics or repair",
+      "status": "unknown",
+      "history_check": "No action ledger or current-path description available; history tool cannot match IDs/aliases; semantic check blocked; not claimed new"
+    },
+    {
+      "action": "alternative landing within mobile/ios/partner",
+      "status": "unknown",
+      "history_check": "No action ledger or current-path description available; history tool cannot match IDs/aliases; semantic check blocked; not claimed new"
+    },
+    {
+      "action": "align partner message with offer",
+      "status": "unknown",
+      "history_check": "No action ledger or current-path description available; history tool cannot match IDs/aliases; semantic check blocked; not claimed new"
+    },
+    {
+      "action": "targeted pause",
+      "status": "unknown",
+      "history_check": "No action ledger or current-path description available; history tool cannot match IDs/aliases; semantic check blocked; not claimed new"
+    },
+    {
+      "action": "full mobile pause and desktop reallocation",
+      "status": "unknown",
+      "history_check": "No action ledger or current-path description available; history tool cannot match IDs/aliases; semantic check blocked; not claimed new"
+    }
+  ],
+  "outputs": [
+    "runs/decision.md",
+    "runs/decision.v1.md",
+    "runs/calculation.v1.json",
+    "runs/state.json",
+    "runs/state.v1.json"
+  ],
+  "human_decision": {
+    "owner": "requesting manager",
+    "status": "pending",
+    "choice_requested": "Diagnosis first versus conditional targeted pause; approve diagnostic/test budget",
+    "recorded_choice": null,
+    "external_changes": false
+  },
+  "next_action": "Obtain human choice and missing maturity/history evidence; first verify current server-accepted cohorts and lag for mobile/ios/partner/offer. No dependent external action authorized or executed.",
+  "time_and_cost": {
+    "analysis_duration": null,
+    "analysis_cost": null,
+    "currency": "RUB",
+    "known_ad_spend_per_window": 146000,
+    "problem_segment_after_spend": 45000,
+    "diagnostic_and_test_budget": null,
+    "note": "No labour rates, actual duration or test budget supplied; do not infer ROI"
+  },
+  "version": 1,
+  "saved_at_utc": "2026-11-18T19:46:06.541839+00:00",
+  "conclusions": [
+    {
+      "decision": "Preserve mobile search and desktop; diagnose mobile/ios/partner/offer; do not blanket pause or reallocate",
+      "basis": "Matched segment CR/CPA and weekly trends; missing maturity/seasonality/scale evidence",
+      "source": "runs/decision.md"
+    },
+    {
+      "decision": "Targeted pause remains conditional, not executed",
+      "basis": "CPA threshold 1000 RUB; require mature current cohorts, promo/seasonality and placement checks; preserve working groups"
+    },
+    {
+      "decision": "Observed loss is not reproduced defect or demonstrated fix effect",
+      "basis": "No mechanism or randomized intervention evidence"
+    }
+  ],
+  "unresolved_questions": [
+    "Conversion lag and cohort maturity; fresh data after Nov 15",
+    "Promo calendar, seasonality, external demand",
+    "Partner placements and same-segment alternative landing",
+    "Other channels, lead quality, revenue and marginal desktop capacity",
+    "Current user path and historical action ledger",
+    "Test power, accepted loss budget and human choice"
+  ],
+  "revision": {
+    "previous_version": null,
+    "new_package": null,
+    "affected_conclusions": [],
+    "policy": "Preserve v1; read only explicitly named new package and necessary prior evidence on update"
+  },
+  "constraints": {
+    "local_only": true,
+    "inputs_modified": false,
+    "network_used": false,
+    "reference_used": false,
+    "alternative_package_used": false
+  }
+}

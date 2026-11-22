@@ -1,0 +1,105 @@
+{
+  "periods": {
+    "before": {
+      "impressions": 12000,
+      "clicks": 720,
+      "visits": 650,
+      "bounces": 164,
+      "form_start_visits": 200,
+      "reported_goal_visits": 50,
+      "spend_rub": "21600",
+      "days": 7,
+      "goal_label": "lead",
+      "source_lines": [
+        2,
+        3
+      ],
+      "ctr_pct": 6.0,
+      "cpc_rub": 30.0,
+      "bounce_pct": 25.2308,
+      "form_start_per_visit_pct": 30.7692,
+      "reported_goal_per_visit_pct": 7.6923
+    },
+    "after": {
+      "impressions": 12000,
+      "clicks": 720,
+      "visits": 650,
+      "bounces": 164,
+      "form_start_visits": 200,
+      "reported_goal_visits": 30,
+      "spend_rub": "21600",
+      "days": 7,
+      "goal_label": "lead",
+      "source_lines": [
+        4,
+        5
+      ],
+      "ctr_pct": 6.0,
+      "cpc_rub": 30.0,
+      "bounce_pct": 25.2308,
+      "form_start_per_visit_pct": 30.7692,
+      "reported_goal_per_visit_pct": 4.6154
+    }
+  },
+  "same_duration": true,
+  "goal_comparability": "different_definitions",
+  "accepted_application_comparison": {
+    "before": {
+      "accepted_visits": 42,
+      "cr_pct": 6.4615,
+      "accepted_per_form_start_pct": 21.0
+    },
+    "after": {
+      "accepted_visits": 30,
+      "cr_pct": 4.6154,
+      "accepted_per_form_start_pct": 15.0
+    }
+  },
+  "accepted_application_by_device": {
+    "desktop": {
+      "before": {
+        "accepted_visits": 14,
+        "visits": 270,
+        "form_start_visits": 90,
+        "cr_pct": 5.1852,
+        "source_line": 2
+      },
+      "after": {
+        "accepted_visits": 14,
+        "visits": 270,
+        "form_start_visits": 90,
+        "cr_pct": 5.1852,
+        "source_line": 4
+      },
+      "accepted_delta": 0,
+      "cr_delta_pp": 0.0
+    },
+    "mobile": {
+      "before": {
+        "accepted_visits": 28,
+        "visits": 380,
+        "form_start_visits": 110,
+        "cr_pct": 7.3684,
+        "source_line": 3
+      },
+      "after": {
+        "accepted_visits": 16,
+        "visits": 380,
+        "form_start_visits": 110,
+        "cr_pct": 4.2105,
+        "source_line": 5
+      },
+      "accepted_delta": -12,
+      "cr_delta_pp": -3.1579
+    }
+  },
+  "warnings": [
+    "Goal label alone does not establish equivalent event definitions.",
+    "Visits and ad clicks are from different measurement systems, not necessarily a nested cohort."
+  ],
+  "goal_definitions": {
+    "before": "form_submit_attempt",
+    "after": "server_accepted_application"
+  },
+  "update_source": "demo/alternative-update/measurement-note.md"
+}

@@ -1,0 +1,42 @@
+{
+  "note": "Without-change, targets, accessible bases and 500 RUB come from the supplied brief pp. 3, 6, 9. All scenario and pilot parameters are illustrative, not measurements or commitments.",
+  "reachable_families": 100000,
+  "reachable_owners": 40000,
+  "starting_families": 6500,
+  "profit_per_paid_number_month_rub": 500,
+  "without_change": {"profit_rub": 279000000, "active_families": 5000, "connected_families": 8000, "multi_number_owners": 1000, "activation_14d": 0.45},
+  "targets": {"profit_rub": 285000000, "active_families": 8000, "connected_families": 12000, "multi_number_owners": 2000, "activation_14d": 0.60},
+  "pilot_assumptions": {"control": 0.12, "treatment": 0.09, "alpha": 0.05, "power": 0.80, "recruitment_weeks": 6},
+  "scenarios": {
+    "main": {
+      "channels": {
+        "app": {"unique_reached": 20000, "control_creation": 0.10, "treatment_creation": 0.16},
+        "support": {"unique_reached": 3000, "control_creation": 0.12, "treatment_creation": 0.22}
+      },
+      "invitation_acceptance": 0.70,
+      "new_connections_retained_to_year_end": 0.90,
+      "retained_existing_families": 255,
+      "december_active_share": 0.65,
+      "q4_invitation_accepted_in_14d": 0.70,
+      "q4_qualifying_action_among_accepted": 0.80,
+      "incremental_paid_number_months_by_month": [0, 0, 0, 100, 200, 300, 400, 500, 600, 700, 800, 900],
+      "direct_cost_by_quarter_rub": [0, 60000, 140000, 280000],
+      "investment_by_quarter_rub": null
+    },
+    "adverse": {
+      "channels": {
+        "app": {"unique_reached": 20000, "control_creation": 0.10, "treatment_creation": 0.13},
+        "support": {"unique_reached": 3000, "control_creation": 0.12, "treatment_creation": 0.16}
+      },
+      "invitation_acceptance": 0.60,
+      "new_connections_retained_to_year_end": 0.85,
+      "retained_existing_families": 83,
+      "december_active_share": 0.625,
+      "q4_invitation_accepted_in_14d": 0.60,
+      "q4_qualifying_action_among_accepted": 0.80,
+      "incremental_paid_number_months_by_month": [0, 0, 0, 0, 50, 100, 150, 200, 250, 300, 350, 400],
+      "direct_cost_by_quarter_rub": [0, 60000, 120000, 200000],
+      "investment_by_quarter_rub": null
+    }
+  }
+}

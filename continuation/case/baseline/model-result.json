@@ -1,0 +1,101 @@
+{
+  "kind": "illustrative_assumptions_not_observed",
+  "pilot": {
+    "families_per_arm": 1638,
+    "total_families": 3276,
+    "required_unique_families_per_week": 546,
+    "observation_days_after_last_inclusion": 7
+  },
+  "scenarios": {
+    "main": {
+      "prediction": {
+        "profit_rub": 280770000,
+        "active_families": 5980,
+        "connected_families": 9200,
+        "multi_number_owners": 1000,
+        "activation_14d": 0.56
+      },
+      "gap_to_target": {
+        "profit_rub": 4230000,
+        "active_families": 2020,
+        "connected_families": 2800,
+        "multi_number_owners": 1000,
+        "activation_14d": 0.04
+      },
+      "increment_vs_without_change": {
+        "profit_rub": 1770000,
+        "active_families": 980,
+        "connected_families": 1200,
+        "multi_number_owners": 0,
+        "activation_14d": 0.11
+      },
+      "unique_family_reach": 23000,
+      "incremental_creations_by_channel": {
+        "app": 1200.0,
+        "support": 300.0
+      },
+      "incremental_accepted_invitations": 1050.0,
+      "incremental_new_connected_at_year_end": 945,
+      "additional_existing_families_retained": 255,
+      "family_coverage": 0.092,
+      "owner_coverage": 0.025,
+      "incremental_paid_number_months": 4500,
+      "new_direct_cost_rub": 480000,
+      "net_increment_by_quarter_rub": [
+        0,
+        240000,
+        610000,
+        920000
+      ],
+      "max_total_development_repayable_this_year_rub": 1770000,
+      "paid_number_months_to_reach_profit_target": 12960,
+      "missing_paid_number_months_for_target": 8460,
+      "payback_quarter_after_last_positive_investment": null
+    },
+    "adverse": {
+      "prediction": {
+        "profit_rub": 279520000,
+        "active_families": 5281,
+        "connected_families": 8450,
+        "multi_number_owners": 1000,
+        "activation_14d": 0.48
+      },
+      "gap_to_target": {
+        "profit_rub": 5480000,
+        "active_families": 2719,
+        "connected_families": 3550,
+        "multi_number_owners": 1000,
+        "activation_14d": 0.12
+      },
+      "increment_vs_without_change": {
+        "profit_rub": 520000,
+        "active_families": 281,
+        "connected_families": 450,
+        "multi_number_owners": 0,
+        "activation_14d": 0.03
+      },
+      "unique_family_reach": 23000,
+      "incremental_creations_by_channel": {
+        "app": 600.0,
+        "support": 120.0
+      },
+      "incremental_accepted_invitations": 432.0,
+      "incremental_new_connected_at_year_end": 367,
+      "additional_existing_families_retained": 83,
+      "family_coverage": 0.0845,
+      "owner_coverage": 0.025,
+      "incremental_paid_number_months": 1800,
+      "new_direct_cost_rub": 380000,
+      "net_increment_by_quarter_rub": [
+        0,
+        15000,
+        180000,
+        325000
+      ],
+      "max_total_development_repayable_this_year_rub": 520000,
+      "paid_number_months_to_reach_profit_target": 12760,
+      "missing_paid_number_months_for_target": 10960,
+      "payback_quarter_after_last_positive_investment": null
+    }
+  }
+}

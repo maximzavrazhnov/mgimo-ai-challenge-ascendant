@@ -1,0 +1,6 @@
+period,start,end,device,impressions,clicks,spend_rub,visits,bounces,form_start_visits,reported_goal_visits,goal_label
+before,2026-11-02,2026-11-08,desktop,5000,300,9000,270,60,90,22,lead
+before,2026-11-02,2026-11-08,mobile,7000,420,12600,380,104,110,28,lead
+after,2026-11-09,2026-11-15,desktop,5000,300,9000,270,60,90,14,lead
+after,2026-11-09,2026-11-15,mobile,7000,420,12600,380,104,110,16,lead
+

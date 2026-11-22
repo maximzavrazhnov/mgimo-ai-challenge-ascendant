@@ -1,0 +1,3 @@
+# Continuation validates the exact bytes of saved Windows runs. Keep the
+# reviewed package byte-for-byte when Git checks it out on Windows or Unix.
+* -text

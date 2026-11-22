@@ -1,0 +1,12 @@
+{
+  "query": "region-state-fix",
+  "status": "not_found_in_available_history",
+  "matches": [],
+  "limits": "Exact IDs and declared aliases only; assess semantic matches and differences separately.",
+  "semantic_review": {
+    "status": "не найдено в доступной истории",
+    "mechanism": "Сохранение выбранного региона при возврате в форму на mobile.",
+    "comparison": "H1: удаление двух полей на обоих устройствах; H2: калькулятор на посадочной. Механики различаются. Новизна не доказана.",
+    "source": "demo/history.csv:2–5; demo/alternative-update/qa-traces.csv:2–5"
+  }
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "arm": "agent",
+    "case": "update-2",
+    "exit_status": 0,
+    "elapsed_seconds": 159.39,
+    "model_arg": null,
+    "usage_reported": [
+      {
+        "input_tokens": 317669,
+        "cached_input_tokens": 285952,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5260,
+        "reasoning_output_tokens": 268
+      }
+    ],
+    "answer_written": true,
+    "state_written": true,
+    "state_changed": true
+  }
+]

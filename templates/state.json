@@ -1,0 +1,13 @@
+{
+  "phase": "A",
+  "status": "in_progress",
+  "source_versions": [],
+  "facts": [],
+  "hypotheses": [],
+  "reviewed_actions": [],
+  "outputs": [],
+  "human_decision": null,
+  "next_action": "Проверь задачу, входные сведения и сопоставимость цели.",
+  "time_and_cost": null
+}
+
